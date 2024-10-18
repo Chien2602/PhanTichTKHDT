@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <button class="menubtn" onclick="showPage('home')">Trang chủ</button>
+            <button class="menubtn" onclick="showPage('employee')">Nhân viên</button>
+            <button class="menubtn" onclick="showPage('customer')">Khách hàng</button>
+            <button class="menubtn" onclick="showPage('product')">Sản phẩm</button>
+            <button class="menubtn" onclick="showPage('bill')">Hóa đơn</button>
+            <button class="menubtn" onclick="showPage('statistical')">Thống kê</button>
+
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search" />
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <i class="fa-solid fa-cart-shopping test" data-name = "giỏ hàng"></i>
+            <i class="fa-solid fa-user test" data-name = "tài khoản"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="home" class="page active">
+            <h1>Trang chủ</h1>
+        </div>
+    
+        <div id="employee" class="page">
+            <h1>Nhân viên</h1>
+        </div>
+    
+        <div id="customer" class="page">
+            <h1>Khách hàng</h1>
+        </div>
+    
+        <div id="product" class="page">
+            <h1>Sản phẩm</h1>
+        </div>
+
+        <div id="bill" class="page">
+            <h1>Hóa đơn</h1>
+        </div>
+    
+        <div id="statistical" class="page">
+            <h1>Thống kê</h1>
+        </div>
+    </div>
+
+    <script src="../js/homepage.js"></script>
+</body>
+
+</html>
